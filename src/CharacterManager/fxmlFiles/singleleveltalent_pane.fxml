@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+         <children>
+            <Label minWidth="-Infinity" prefWidth="200.0" text="Talent Name" />
+            <Button mnemonicParsing="false" text="Remove (cost)" />
+         </children>
+      </HBox>
+      <TextArea editable="false" prefColumnCount="1" prefHeight="80.0" prefWidth="250.0" promptText="description" wrapText="true" />
+   </children>
+</VBox>

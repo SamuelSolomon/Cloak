@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+         <children>
+            <Label text="Complication Name" />
+            <Button mnemonicParsing="false" text="Edit..." />
+            <Button mnemonicParsing="false" text="Remove (-cost)" />
+         </children>
+      </HBox>
+      <TextArea editable="false" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="1" prefHeight="150.0" prefRowCount="1" prefWidth="250.0" promptText="complication description" wrapText="true" />
+   </children>
+</VBox>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" pannable="true" prefHeight="766.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <HBox minWidth="-Infinity">
+         <children>
+            <ScrollPane minWidth="-Infinity" pannable="true" prefViewportHeight="764.0" prefViewportWidth="327.0" prefWidth="370.0" HBox.hgrow="ALWAYS">
+               <content>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Campaign Skills">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Armor Skills">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label minWidth="-Infinity" prefWidth="100.0" text="Light Armor" />
+                                    <Button minWidth="-Infinity" mnemonicParsing="false" text="+" />
+                                    <Label alignment="CENTER" minWidth="-Infinity" prefWidth="16.0" text="3" />
+                                    <Button minWidth="-Infinity" mnemonicParsing="false" text="-" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label minWidth="-Infinity" prefWidth="100.0" text="Medium Armor" />
+                                    <Button minWidth="-Infinity" mnemonicParsing="false" text="+" />
+                                    <Label alignment="CENTER" minWidth="-Infinity" prefWidth="16.0" text="3" />
+                                    <Button minWidth="-Infinity" mnemonicParsing="false" text="-" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="35.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label minWidth="-Infinity" prefWidth="100.0" text="Heavy Armor" />
+                                    <Button minWidth="-Infinity" mnemonicParsing="false" text="+" />
+                                    <Label alignment="CENTER" minWidth="-Infinity" prefWidth="16.0" text="3" />
+                                    <Button minWidth="-Infinity" mnemonicParsing="false" text="-" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </VBox>
+                        <Label text="Weapon Skills">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" text="Add Weapon Skill (-1)...">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Button>
+                        <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                        <Label text="Martial Arts">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" spacing="5.0">
+                           <children>
+                              <Button layoutX="10.0" layoutY="97.0" mnemonicParsing="false" text="Add Martial Art..." />
+                              <Label text="Extra Damage Classes : total" />
+                              <Button mnemonicParsing="false" text="+" />
+                              <Label alignment="CENTER" minWidth="-Infinity" prefWidth="16.0" text="4" />
+                              <Button mnemonicParsing="false" text="-" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <VBox layoutX="10.0" layoutY="127.0" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </VBox>
+                        <Button mnemonicParsing="false" text="Add Weapon Element (-1)..." />
+                        <VBox layoutX="10.0" layoutY="184.0" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </VBox>
+                        <Label text="Enchanting">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <HBox spacing="5.0">
+                           <children>
+                              <Button layoutX="10.0" layoutY="97.0" mnemonicParsing="false" text="Buy Enchanting (-3)" />
+                              <Button disable="true" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Remove All Enchanting (+3+upgrades)" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="241.0" spacing="5.0">
+                           <children>
+                              <Label text="Weak Enchantments : " wrapText="true" />
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Button layoutX="10.0" layoutY="337.0" mnemonicParsing="false" text="Upgrade (-1)...">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <HBox layoutX="10.0" layoutY="271.0" spacing="5.0">
+                           <children>
+                              <Label text="Strong Enchantments : " wrapText="true" />
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" />
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Label layoutX="10.0" layoutY="219.0" text="SoulSmithing">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <HBox spacing="5.0">
+                           <children>
+                              <Button layoutX="10.0" layoutY="241.0" mnemonicParsing="false" text="Buy SoulSmithing (-3)" />
+                              <Button disable="true" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Remove All SoulSmithing (+3+upgrades)" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <Label text="All Weak Weapons : Repair Percentage" />
+                        <Button mnemonicParsing="false" text="Add New Weapon (-1)..." />
+                        <VBox layoutX="10.0" layoutY="214.0" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                        <Label layoutX="10.0" layoutY="241.0" text="Magic">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" text="Add New Magic (-3)...">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Button>
+                        <VBox layoutX="10.0" layoutY="127.0" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <ScrollPane minWidth="-Infinity" pannable="true" prefViewportHeight="766.0" prefViewportWidth="326.0" prefWidth="270.0" HBox.hgrow="ALWAYS">
+               <content>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Basic Skills">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button minWidth="-Infinity" mnemonicParsing="false" text="Add Basic Skill..." />
+                        <VBox spacing="5.0">
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </VBox>
+                        <Label text="Variable Skill Levels">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button mnemonicParsing="false" prefWidth="200.0" text="Add Variable Skill Level Category..." />
+                        <VBox spacing="5.0">
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+   </content>
+</ScrollPane>

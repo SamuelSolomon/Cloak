@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane fitToWidth="true" prefWidth="283.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </padding>
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" text="Add Complication..." />
+            <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                     <children>
+                        <Label text="Low Blood Sugar" />
+                        <Button mnemonicParsing="false" text="Edit..." />
+                        <Button mnemonicParsing="false" text="Remove (-10 CP)" />
+                     </children>
+                  </HBox>
+                  <TextArea editable="false" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="1" prefHeight="150.0" prefRowCount="1" prefWidth="250.0" promptText="complication description" text="Character Must Eat Every 4 hrs&#10;Penalty: lose 2 points of Mamimum Stamina. &#10;If the 4 hr mark is missed, the next effect takes place in 2 hrs. and the next in 1. and it stays at a 1 hr interval until the character finds a way to eat.&#10;effects are cumulative." wrapText="true" />
+               </children>
+            </VBox>
+            <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                     <children>
+                        <Label text="Cowardly" />
+                        <Button mnemonicParsing="false" text="Edit..." />
+                        <Button mnemonicParsing="false" text="Remove (-15)" />
+                     </children>
+                  </HBox>
+                  <TextArea editable="false" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="1" prefHeight="150.0" prefRowCount="1" prefWidth="250.0" promptText="complication description" text="The Character is abnormally afraid of taking risks.&#10;The Character sees more danger in any given scenario than most.&#10;If the danger appears perilous to the character then they must overcome an EGO roll of -13 to take action that may put them in danger.&#10;If the roll is failed by more than 5 the character will freeze up and be unable to take any action.&#10;Each turn they must make the roll to see if they are paralyzed with fear.&#10;They can be snapped out of it by another character though.&#10;after each subsequent paralyzation in a short period of time(1 hr) the failure level required goes up by 1." wrapText="true" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </content>
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+</ScrollPane>

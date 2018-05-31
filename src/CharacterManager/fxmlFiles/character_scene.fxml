@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root type="VBox" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" spacing="5.0">
+         <children>
+            <Label fx:id="characterFileNameLabel" text="Character File Name">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+            <Separator orientation="VERTICAL" />
+            <Label fx:id="totalCPLabel" layoutX="10.0" layoutY="10.0" text="Total CP : ">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="heldCPLabel" layoutX="161.0" layoutY="10.0" text="Current CP : ">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#plusCP" text="+" />
+            <Button layoutX="321.0" layoutY="10.0" mnemonicParsing="false" onAction="#minusCP" text="-" />
+         </children>
+      </HBox>
+      <TabPane prefHeight="1000.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="75.0">
+        <tabs>
+          <Tab fx:id="infoTab" text="Info">
+               <content>
+               </content></Tab>
+          <Tab fx:id="storyTab" disable="true" closable="false" text="Story">
+               <content>
+                  <fx:include source="story_tab.fxml" />
+               </content></Tab>
+            <Tab fx:id="statsTab" text="Stats">
+               <content>
+               </content></Tab>
+            <Tab fx:id="skillsTab" disable="true" text="Skills">
+               <content>
+                  <fx:include source="skills_tab.fxml" />
+               </content></Tab>
+            <Tab fx:id="talentsTab" disable="true" text="Talents">
+               <content>
+                  <fx:include source="talents_tab.fxml.fxml" />
+               </content></Tab>
+            <Tab fx:id="powersTab" disable="true" text="Powers">
+               <content>
+                  <fx:include source="powers_tab.fxml" />
+               </content></Tab>
+            <Tab fx:id="complicationsTab" disable="true" text="Complications">
+               <content>
+                  <fx:include source="complications_tab.fxml" />
+               </content></Tab>
+            <Tab fx:id="equipmentTab" disable="true" text="Equipment">
+               <content>
+                  <fx:include source="equipment_tab.fxml" />
+               </content></Tab>
+            <Tab fx:id="playTab" disable="true" text="Play" />
+        </tabs>
+      </TabPane>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</fx:root>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="310.0" spacing="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CharacterManager.SoulPopupController">
+   <children>
+      <Label text="New Soul">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Separator prefWidth="200.0" />
+      <Label contentDisplay="RIGHT" minHeight="-Infinity" minWidth="-Infinity" text="Soul Name">
+         <graphic>
+            <TextField fx:id="nameText" minHeight="-Infinity" minWidth="-Infinity" />
+         </graphic>
+      </Label>
+      <Label contentDisplay="RIGHT" text="Quality">
+         <graphic>
+            <HBox minHeight="-Infinity" minWidth="-Infinity" spacing="3.0">
+               <children>
+                  <RadioButton fx:id="weakButton" mnemonicParsing="false" selected="true" text="Weak">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="qualityToggle" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="strongButton" mnemonicParsing="false" text="Strong" toggleGroup="$qualityToggle" />
+                  <RadioButton fx:id="powerfulButton" mnemonicParsing="false" text="Powerful" toggleGroup="$qualityToggle" />
+                  <RadioButton fx:id="legendaryButton" mnemonicParsing="false" text="Legendary" toggleGroup="$qualityToggle" />
+               </children>
+            </HBox>
+         </graphic>
+      </Label>
+      <Label contentDisplay="RIGHT" text="CP Worth">
+         <graphic>
+            <TextField fx:id="cpWorthText" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="4" />
+         </graphic>
+      </Label>
+      <Label contentDisplay="RIGHT" text="Forgable?">
+         <graphic>
+            <ToggleButton fx:id="forgableButton" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ForgableSwitch" prefWidth="40.0" text="No" />
+         </graphic>
+      </Label>
+      <HBox>
+         <children>
+            <Button fx:id="completeButton" mnemonicParsing="false" onAction="#Complete" prefWidth="275.0" text="Complete" />
+            <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#Complete" prefWidth="75.0" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+   </padding>
+</VBox>

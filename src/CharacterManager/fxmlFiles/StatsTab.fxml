@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<fx:root fitToHeight="true" fitToWidth="true" pannable="true" prefHeight="551.0" prefWidth="761.0" type="ScrollPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <HBox minWidth="-Infinity">
+         <children>
+            <ScrollPane fitToWidth="true" minWidth="-Infinity" pannable="true" prefWidth="250.0" HBox.hgrow="ALWAYS">
+               <content>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" text="Characteristics">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font></Label>
+                        <VBox fx:id="CharacteristicVBox" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </ScrollPane>
+            <ScrollPane fitToWidth="true" pannable="true" prefViewportHeight="549.0" prefViewportWidth="169.0" prefWidth="225.0" HBox.hgrow="ALWAYS">
+               <content>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" text="Souls">
+                           <graphic>
+                              <Button alignment="TOP_CENTER" mnemonicParsing="false" onAction="#addSoul" text="Add Soul..." />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <VBox fx:id="SoulVBox" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </ScrollPane>
+            <ScrollPane fitToWidth="true" pannable="true" prefViewportHeight="549.0" prefViewportWidth="200.0" prefWidth="225.0" HBox.hgrow="ALWAYS">
+               <content>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                     <children>
+                        <Label text="State">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" spacing="5.0">
+                           <children>
+                              <Label fx:id="stateLabel" text="State" />
+                              <Button fx:id="stateButton" mnemonicParsing="false" onAction="#stateSwitch" text="Switch to Hollow" />
+                           </children>
+                        </HBox>
+                        <Separator />
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" spacing="5.0">
+                           <children>
+                              <Label fx:id="sanityTotalLabel" text="Sanity : total" />
+                              <Button fx:id="sanityPlusButton" mnemonicParsing="false" onAction="#plusSanity" text="+" />
+                              <Button fx:id="sanityMinusButton" layoutX="82.0" layoutY="10.0" mnemonicParsing="false" onAction="#minusSanity" text="-" />
+                           </children>
+                        </HBox>
+                        <TextArea fx:id="textArea75" prefColumnCount="1" prefHeight="125.0" prefWidth="200.0" promptText="75 : " wrapText="true">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextArea>
+                        <TextArea fx:id="textArea50" layoutX="10.0" layoutY="70.0" prefColumnCount="1" prefHeight="125.0" prefWidth="200.0" promptText="50 : " wrapText="true" VBox.vgrow="ALWAYS">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </TextArea>
+                        <TextArea fx:id="textArea25" layoutX="10.0" layoutY="159.0" prefColumnCount="1" prefHeight="125.0" prefWidth="200.0" promptText="25 : " wrapText="true" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </ScrollPane>
+         </children>
+      </HBox>
+   </content>
+</fx:root>

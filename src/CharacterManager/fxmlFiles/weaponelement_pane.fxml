@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox alignment="CENTER_LEFT" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label contentDisplay="RIGHT" minWidth="-Infinity" prefWidth="100.0" text="Weapon" />
+      <Button mnemonicParsing="false" text="Remove (cost)" />
+   </children>
+</HBox>

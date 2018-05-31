@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root type="ScrollPane" fitToHeight="true" fitToWidth="true" pannable="true" prefHeight="352.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <HBox minHeight="-Infinity" minWidth="-Infinity" spacing="10.0">
+         <children>
+            <ScrollPane fitToWidth="true" pannable="true" prefWidth="150.0" HBox.hgrow="ALWAYS">
+               <content>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" text="General">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <children>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Name" />
+                                    <TextArea fx:id="nameText" prefColumnCount="1" prefRowCount="1" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Race" />
+                                    <TextArea fx:id="raceText" prefColumnCount="1" prefRowCount="1" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Age" />
+                                    <TextArea fx:id="ageText" prefColumnCount="1" prefRowCount="1" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Gender" />
+                                    <TextArea fx:id="genderText" prefColumnCount="1" prefRowCount="1" wrapText="true" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </ScrollPane>
+            <ScrollPane fitToWidth="true" layoutX="10.0" layoutY="10.0" pannable="true" prefWidth="150.0" HBox.hgrow="ALWAYS">
+               <content>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" text="Appearance">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <children>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Height" />
+                                    <TextArea fx:id="heightText" prefColumnCount="1" prefRowCount="1" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Hair Color" />
+                                    <TextArea fx:id="hairColorText" prefColumnCount="1" prefRowCount="1" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Eye Color" />
+                                    <TextArea fx:id="eyeColorText" prefColumnCount="1" prefRowCount="1" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Skin Color" />
+                                    <TextArea fx:id="skinColorText" prefColumnCount="1" prefRowCount="1" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Build" />
+                                    <TextArea fx:id="buildText" prefColumnCount="1" prefRowCount="1" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Weight" />
+                                    <TextArea fx:id="weightText" prefColumnCount="1" prefRowCount="1" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Gender" />
+                                    <TextArea fx:id="genderAppearenceText" prefColumnCount="1" prefRowCount="1" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Scars" />
+                                    <TextArea fx:id="scarsText" prefColumnCount="1" prefRowCount="4" wrapText="true" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </ScrollPane>
+            <ScrollPane fitToWidth="true" layoutX="773.0" layoutY="10.0" pannable="true" prefWidth="150.0" HBox.hgrow="ALWAYS">
+               <content>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" text="Mentality">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <children>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Demeanor" />
+                                    <TextArea fx:id="demeanorText" prefColumnCount="1" prefRowCount="3" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Likes" />
+                                    <TextArea fx:id="likesText" prefColumnCount="1" prefRowCount="5" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Dislikes" />
+                                    <TextArea fx:id="dislikesText" prefColumnCount="1" prefRowCount="5" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Gender" />
+                                    <TextArea fx:id="genderText" prefColumnCount="1" prefRowCount="1" wrapText="true" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </ScrollPane>
+            <ScrollPane fitToWidth="true" layoutX="773.0" layoutY="10.0" pannable="true" prefWidth="150.0" HBox.hgrow="ALWAYS">
+               <content>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" text="Abilities">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <children>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Class Role" />
+                                    <TextArea fx:id="classText" prefColumnCount="1" prefRowCount="2" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Skills" />
+                                    <TextArea fx:id="skillsText" prefColumnCount="1" prefRowCount="5" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Magic" />
+                                    <TextArea fx:id="magicText" prefColumnCount="1" prefRowCount="5" wrapText="true" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </ScrollPane>
+            <ScrollPane fitToWidth="true" layoutX="773.0" layoutY="10.0" pannable="true" prefWidth="150.0" HBox.hgrow="ALWAYS">
+               <content>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" text="History">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <children>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Nationality" />
+                                    <TextArea fx:id="nationalityText" prefColumnCount="1" prefRowCount="1" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Occupations" />
+                                    <TextArea fx:id="occupationsText" prefColumnCount="1" prefRowCount="4" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Hobbies" />
+                                    <TextArea fx:id="hobbiesText" prefColumnCount="1" prefRowCount="4" wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label text="Family" />
+                                    <TextArea fx:id="familiesText" prefColumnCount="1" prefRowCount="6" wrapText="true" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </ScrollPane>
+         </children>
+      </HBox>
+   </content>
+</fx:root>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane alignment="CENTER_LEFT">
+         <children>
+            <Label text="Dagger" />
+            <TextField minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="114.0" promptText="Weapon" visible="false" />
+         </children>
+      </StackPane>
+      <Button mnemonicParsing="false" text="Remove (1)" />
+   </children>
+</HBox>

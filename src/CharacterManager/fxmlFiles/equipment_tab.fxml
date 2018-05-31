@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" pannable="true" prefHeight="352.0" prefWidth="1029.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <HBox minHeight="-Infinity" minWidth="-Infinity">
+         <children>
+            <ScrollPane fitToWidth="true" pannable="true" prefWidth="350.0" HBox.hgrow="ALWAYS">
+               <content>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                     <children>
+                        <Label contentDisplay="RIGHT" text="Weapons">
+                           <graphic>
+                              <Button mnemonicParsing="false" text="New Weapon..." />
+                           </graphic>
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <children>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label contentDisplay="RIGHT" text="Saint's Ace">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <graphic>
+                                          <Label contentDisplay="RIGHT" textFill="RED">
+                                             <graphic>
+                                                <Button mnemonicParsing="false" text="Remove" />
+                                             </graphic>
+                                          </Label>
+                                       </graphic>
+                                    </Label>
+                                    <GridPane hgap="5.0" minHeight="-Infinity" minWidth="-Infinity">
+                                       <children>
+                                          <Label contentDisplay="RIGHT" text="Powerful">
+                                             <graphic>
+                                                <Label contentDisplay="RIGHT" text="Dagger" />
+                                             </graphic>
+                                          </Label>
+                                          <Label text="Holy" GridPane.rowIndex="1" />
+                                          <Label text="Gwynevere's Blessing" GridPane.rowIndex="2" />
+                                          <Label contentDisplay="RIGHT" text="1d6" GridPane.columnIndex="1">
+                                             <graphic>
+                                                <Label contentDisplay="RIGHT" text="Peircing/Slashing">
+                                                   <graphic>
+                                                      <Label text="Killing Damage" />
+                                                   </graphic>
+                                                </Label>
+                                             </graphic>
+                                          </Label>
+                                          <Label text="Strength : 5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Label text="Durability 10/12" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <Label />
+                                    <TextArea editable="false" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="1" prefRowCount="4" promptText="Weapon Description" text="A weapon said to have been held by Gwynever's handmaidens at the end of the age of Fire. Allows the User to cast Miracles.&#10;" wrapText="true" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </content>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </ScrollPane>
+            <ScrollPane fitToWidth="true" pannable="true" prefWidth="270.0" HBox.hgrow="ALWAYS">
+               <content>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" text="Armor">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                           <graphic>
+                              <Button mnemonicParsing="false" text="New Armor..." />
+                           </graphic>
+                        </Label>
+                        <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <children>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label contentDisplay="RIGHT" text="Singed Acolyte Robes">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <graphic>
+                                          <Label contentDisplay="RIGHT" text="(broken)" textFill="RED">
+                                             <graphic>
+                                                <Button mnemonicParsing="false" text="Remove" />
+                                             </graphic>
+                                          </Label>
+                                       </graphic>
+                                    </Label>
+                                    <GridPane hgap="5.0" minHeight="-Infinity" minWidth="-Infinity">
+                                       <children>
+                                          <Label contentDisplay="RIGHT" text="Strong">
+                                             <graphic>
+                                                <Label contentDisplay="RIGHT" text="Light">
+                                                   <graphic>
+                                                      <Label text="Cloth" />
+                                                   </graphic>
+                                                </Label>
+                                             </graphic>
+                                          </Label>
+                                          <Label text="No Enchantment" GridPane.rowIndex="1" />
+                                          <Label text="No Power" GridPane.rowIndex="2" />
+                                          <Label contentDisplay="RIGHT" text="Physical Defense : 1" GridPane.columnIndex="1" />
+                                          <Label text="Magical Defense : 3" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                          <Label text="Durability : -4/10" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                    <TextArea editable="false" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="1" prefRowCount="4" promptText="Armor Description" text="Robes Worn by those who served the gods during the age of Fire. A black ring has been burned onto the chest. The armor has been cut in several key places and must be repaired to be worn effectivly." wrapText="true" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </ScrollPane>
+            <ScrollPane fitToWidth="true" layoutX="841.0" layoutY="10.0" pannable="true" prefHeight="350.0" prefWidth="210.0" HBox.hgrow="ALWAYS">
+               <content>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" text="Items">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                           <graphic>
+                              <Button mnemonicParsing="false" text="New Item..." />
+                           </graphic>
+                        </Label>
+                        <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <children>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label contentDisplay="RIGHT" text="Black Key">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <graphic>
+                                          <Label contentDisplay="RIGHT" textFill="RED">
+                                             <graphic>
+                                                <Button mnemonicParsing="false" text="Remove" />
+                                             </graphic>
+                                          </Label>
+                                       </graphic>
+                                    </Label>
+                                    <TextArea editable="false" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="1" prefRowCount="4" promptText="Item Description" text="A Strangley shaped key to some unknown Door." wrapText="true" />
+                                 </children>
+                              </VBox>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label contentDisplay="RIGHT" text="Estus Flask">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <graphic>
+                                          <Label contentDisplay="RIGHT" textFill="RED">
+                                             <graphic>
+                                                <Button mnemonicParsing="false" text="Remove" />
+                                             </graphic>
+                                          </Label>
+                                       </graphic>
+                                    </Label>
+                                    <TextArea editable="false" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="1" prefRowCount="4" promptText="Item Description" text="An Emerald bottle filled with the essence of the Bonfires.&#10;The Essence can allow an undead to live on long after they should have fallen." wrapText="true" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </ScrollPane>
+            <ScrollPane fitToWidth="true" layoutX="841.0" layoutY="10.0" pannable="true" prefWidth="200.0" HBox.hgrow="ALWAYS">
+               <content>
+                  <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                     <children>
+                        <Label contentDisplay="RIGHT" text="Resources">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                           <graphic>
+                              <Button mnemonicParsing="false" text="New Resource..." />
+                           </graphic>
+                        </Label>
+                        <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <children>
+                              <VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0">
+                                 <children>
+                                    <Label contentDisplay="RIGHT" text="FireBomb">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <graphic>
+                                          <Button mnemonicParsing="false" text="Remove" />
+                                       </graphic>
+                                    </Label>
+                                    <TextArea editable="false" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="1" prefRowCount="3" promptText="Resource Description/Effect" text="When Struck they create a fiery explosion. &#10;1m Radius, 3d6 Stun Damage on adjacent targets&#10;6d6 Damage on Target." wrapText="true" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </padding>
+                  </VBox>
+               </content>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </ScrollPane>
+         </children>
+      </HBox>
+   </content>
+</ScrollPane>

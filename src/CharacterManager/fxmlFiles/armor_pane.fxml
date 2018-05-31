@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" spacing="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label contentDisplay="RIGHT" text="Armor Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <Label contentDisplay="RIGHT" text="(broken)" textFill="RED">
+               <graphic>
+                  <Button mnemonicParsing="false" text="Remove" />
+               </graphic>
+            </Label>
+         </graphic>
+      </Label>
+      <GridPane hgap="5.0" minHeight="-Infinity" minWidth="-Infinity">
+         <children>
+            <Label contentDisplay="RIGHT" text="Quality">
+               <graphic>
+                  <Label contentDisplay="RIGHT" text="Light">
+                     <graphic>
+                        <Label text="Cloth" />
+                     </graphic>
+                  </Label>
+               </graphic>
+            </Label>
+            <Label text="Enchantment" GridPane.rowIndex="1" />
+            <Label text="Power" GridPane.rowIndex="2" />
+            <Label contentDisplay="RIGHT" text="Physical Defense : value" GridPane.columnIndex="1" />
+            <Label text="Magical Defense : value" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Durability : current/max" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <TextArea editable="false" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="1" prefRowCount="4" promptText="Armor Description" wrapText="true" />
+   </children>
+</VBox>

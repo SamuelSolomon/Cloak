@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox alignment="CENTER_LEFT" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label minHeight="-Infinity" minWidth="-Infinity" prefWidth="100.0" text="Skill Category">
+         <HBox.margin>
+            <Insets right="5.0" />
+         </HBox.margin>
+      </Label>
+      <Separator orientation="VERTICAL" />
+      <Label layoutX="10.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" text="total" />
+      <Button mnemonicParsing="false" text="+" />
+      <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefWidth="16.0" text="cost" />
+      <Button mnemonicParsing="false" text="-" />
+   </children>
+</HBox>

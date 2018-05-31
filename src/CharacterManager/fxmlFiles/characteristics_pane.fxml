@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox alignment="CENTER_LEFT" spacing="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="charNameLabel" minWidth="-Infinity" prefWidth="40.0" text="CHAR" />
+      <Separator orientation="VERTICAL" />
+      <Label fx:id="currentValueLabel" contentDisplay="RIGHT" minWidth="-Infinity" prefWidth="16.0" text="Value" GridPane.columnIndex="1" />
+      <Separator orientation="VERTICAL" />
+      <Label fx:id="softCapLabel" contentDisplay="RIGHT" minWidth="-Infinity" prefWidth="16.0" text="Soft Cap" />
+      <Separator orientation="VERTICAL" />
+      <Label fx:id="totalInvestmentLabel" contentDisplay="RIGHT" minWidth="-Infinity" prefWidth="16.0" text="Total Investment" />
+      <Button mnemonicParsing="false" onAction="#plusOne" text="+" />
+      <Label fx:id="costLabel" alignment="CENTER" contentDisplay="RIGHT" prefWidth="16.0" text="Cost" />
+      <Button mnemonicParsing="false" onAction="#minusOne" text="-" />
+   </children>
+</HBox>

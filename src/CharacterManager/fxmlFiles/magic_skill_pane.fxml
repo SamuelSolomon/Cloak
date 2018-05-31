@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label minWidth="-Infinity" prefWidth="80.0" text="Sorcery" />
+      <Separator orientation="VERTICAL" />
+      <StackPane alignment="CENTER_LEFT">
+         <children>
+            <Label text="Darkness" />
+            <TextField minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="114.0" promptText="Magic Skill" visible="false" />
+         </children>
+      </StackPane>
+      <Button mnemonicParsing="false" text="Remove (+3)" />
+   </children>
+</HBox>
